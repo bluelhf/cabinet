@@ -15,14 +15,13 @@ It is intended mostly as a note to self, but may be useful to others wishing to 
 
 ## Cabinette Class Shenanigans
 
-Cabinet consists of two source directories,`main` and `jar`, achieved with `build-helper-plugin`. The `main` directory contains code related to the Cabinet plugin itself, which is used for creating cabinettes. The`jar` directory contains code to be injected into cabinet plugins while being built by Cabinet.
+Cabinet consists of three source directories, `main`, `jar`, and `commons`, achieved with `build-helper-plugin`. The `main` directory contains code related to the Cabinet plugin itself, which is used for creating cabinettes. The `jar` directory contains code to be injected into cabinet plugins while being built by Cabinet. The `commons` directory contains code shared by both.
 
-Initially, both source directories are compiled into a shared target directory,`target/classes`. However, after compilation, the classes in the `jar` directory are moved into the `inject` subdirectory.
+Initially, all source directories are compiled into a shared target directory, `target/classes`. However, after compilation, the `blue/lhf/cabinette/` package is moved and the `blue/lhf/cabinet/commons` package copied into the `inject` subdirectory.
 
 The purpose of this separation is to fix a problem brought by Spigot's plugin loader mechanism; if one plugin contains the main class of another plugin in its JAR, the plugin loader will load the incorrect class and fail. To avoid this, Cabinet places .class files to be injected into the `inject` subdirectory within its own JAR, while maintaining the original package declarations.
 
-To move the files, we use `maven-antrun-plugin`.
-`maven-antrun-plugin` is included as a post-processing step for class files, which moves the files from `blue/lhf/cabinette/` into the `inject` directory.
+To move and copy files, we use `maven-antrun-plugin`.
 
 ## Cabinette Extraction
 
