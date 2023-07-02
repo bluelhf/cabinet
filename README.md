@@ -19,4 +19,4 @@ cabinet Example PluginA.jar PluginA/config.yml PluginB.jar
 When the command is executed, Cabinet will create a Cabinette called `Example.jar` in the `plugins` folder. This Cabinette can be distributed and installed like any other plugin.
 
 > **Warning**  
-> Please be mindful of the respective licences of the files you include in your Cabinette; Distributing them is illegal unless you are explicitly permitted to do so by the copyright holders.
+> Please be mindful of the respective licences of the files you include in your Cabinette; distributing them is illegal unless you are explicitly permitted to do so by the copyright holders.
