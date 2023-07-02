@@ -1,0 +1,12 @@
+name: '${project.name}'
+version: '${project.version}'
+main: blue.lhf.cabinet.Cabinet
+api-version: '1.20'
+authors: [bluelhf]
+description: Build self-extracting meta-JARs :)
+
+commands:
+    cabinet:
+      description: Build a cabinet
+      usage: /<command> <output> <files/folders...>
+      aliases: [c]
