@@ -1,6 +1,6 @@
 package blue.lhf.cabinette;
 
-import blue.lhf.cabinette.commons.JarUtils;
+import blue.lhf.cabinet.commons.JarUtils;
 import blue.lhf.cabinette.plugins.EmbeddedLoader;
 import com.google.common.graph.*;
 import org.bukkit.Bukkit;

@@ -1,6 +1,6 @@
 package blue.lhf.cabinette;
 
-import blue.lhf.cabinette.commons.JarUtils;
+import blue.lhf.cabinet.commons.JarUtils;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.IOException;

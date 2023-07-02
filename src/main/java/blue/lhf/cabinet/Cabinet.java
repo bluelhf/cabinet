@@ -1,6 +1,6 @@
 package blue.lhf.cabinet;
 
-import blue.lhf.cabinette.commons.JarUtils;
+import blue.lhf.cabinet.commons.JarUtils;
 import org.bukkit.command.*;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;

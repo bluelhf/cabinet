@@ -1,7 +1,7 @@
 package blue.lhf.cabinet;
 
 import blue.lhf.cabinet.utils.ThrowingConsumer;
-import blue.lhf.cabinette.commons.JarUtils;
+import blue.lhf.cabinet.commons.JarUtils;
 
 import java.io.*;
 import java.nio.file.*;

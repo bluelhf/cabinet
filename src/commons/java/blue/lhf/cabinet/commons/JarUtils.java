@@ -1,4 +1,4 @@
-package blue.lhf.cabinette.commons;
+package blue.lhf.cabinet.commons;
 
 import java.io.*;
 import java.net.*;
