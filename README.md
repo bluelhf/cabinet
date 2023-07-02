@@ -13,7 +13,7 @@ To create a Cabinette, use the `/cabinet` command, followed by the name of the C
 For example, to create a Cabinette called `Example`, which contains the plugins `PluginA.jar`, `PluginA/config.yml`, and `PluginB.jar`, use this command:
 
 ```mcfunction
-/cabinet Example PluginA.jar PluginA/config.yml PluginB.jar
+cabinet Example PluginA.jar PluginA/config.yml PluginB.jar
 ```
 
 When the command is executed, Cabinet will create a Cabinette called `Example.jar` in the `plugins` folder. This Cabinette can be distributed and installed like any other plugin.
